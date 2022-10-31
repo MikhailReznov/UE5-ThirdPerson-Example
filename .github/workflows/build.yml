@@ -1,0 +1,8 @@
+name: build-app
+on: push
+jobs:
+  my-job:
+    runs-on: Gevorg-Win64
+    steps:
+      - name: print-hello-world
+        run: echo "Hello World!"
