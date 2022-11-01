@@ -30,8 +30,8 @@ jobs:
       - name: Build Project (Win64)
         run: .\Scripts\BuildProject.bat
 
-      - name: Build Plugin (Win64)
-        run: .\Scripts\BuildPlugin.bat
+#      - name: Build Plugin (Win64)
+#        run: .\Scripts\BuildPlugin.bat
 
 #      - name: Upload App
 #        uses: actions/upload-artifact@v2
