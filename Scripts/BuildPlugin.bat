@@ -3,8 +3,11 @@ pushd "%~dp0"
 
 rem glTFRuntime plugin packaging command.
 
-del -r -force %~dp0..\..\glTFRuntime\
+@set EngineDir="C:\Program Files\Epic Games\UE_5.0\Engine\"
+@set ProjectDir=%~dp0..\
 
-"C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildPlugin -Rocket -Plugin=%~dp0..\Plugins\glTFRuntime\glTFRuntime.uplugin -TargetPlatforms=Win64 -Package=%~dp0..\..\glTFRuntime
+powershell -Command  "Remove-Item -LiteralPath %ProjectDir%..\glTFRuntime\ -Force -Recurse -ErrorAction SilentlyContinue"
+
+%EngineDir%Build\BatchFiles\RunUAT.bat BuildPlugin -Rocket -Plugin=%ProjectDir%Plugins\glTFRuntime\glTFRuntime.uplugin -TargetPlatforms=Win64 -Package=%ProjectDir%..\glTFRuntime
 
 popd
