@@ -11,10 +11,10 @@ rem "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" Buil
 
 rem "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -build -cook -platform=Win64 -unversionedcookedcontent -ddc=InstalledDerivedDataBackendGraph -map= -skipcookingeditorcontent -unversionedcookedcontent -pak -distribution -compressed -stage -package -stagingdirectory=%~dp0..\Builds -cmdline=" -Messaging" -archive -archivedirectory=%~dp0..\Archive
 
-rm -r -force %~dp0..\Builds\
+rm -r -force %~dp0..\..\Builds\
 
-rm -r -force %~dp0..\Archive\
+rm -r -force %~dp0..\..\Archive\
 
-"C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -platform=Win64 -targetplatform=Win64 -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -unversionedcookedcontent -pak -distribution -compressed -rocket -prereqs -stage -package -stagingdirectory=%~dp0..\Builds -archive -archivedirectory=%~dp0..\Archive
+"C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0..\UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -platform=Win64 -targetplatform=Win64 -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -unversionedcookedcontent -pak -distribution -compressed -rocket -prereqs -stage -package -stagingdirectory=%~dp0..\..\Builds -archive -archivedirectory=%~dp0..\..\Archive
 
 popd
