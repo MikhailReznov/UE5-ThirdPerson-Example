@@ -17,7 +17,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          clean: false
+          lfs:true
+#          clean: false
 
       - name: Build Project (Win64)
         run: .\BuildGame.bat
