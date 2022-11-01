@@ -17,9 +17,9 @@ rem "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" Buil
 @set TargetPlatform=Win64
 @set Configuration=Development
 
-del -force %ProjectDir%..\Builds\
+del %ProjectDir%..\Builds\
 
-del -force %ProjectDir%..\Archive\
+del %ProjectDir%..\Archive\
 
 %EngineDir%Build\BatchFiles\RunUAT.bat BuildCookRun -project=%ProjectDir%UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe=%EngineDir%Binaries\Win64\UnrealEditor-Cmd.exe -utf8output -platform=Win64 -targetplatform=Win64 -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -unversionedcookedcontent -pak -distribution -compressed -rocket -prereqs -stage -package -stagingdirectory=%ProjectDir%..\Builds -archive -archivedirectory=%ProjectDir%..\Archive
 
