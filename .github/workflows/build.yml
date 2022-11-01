@@ -28,4 +28,7 @@ jobs:
         run: git clean -fdx
 
       - name: Build Project (Win64)
-        run: .\BuildGame.bat
+        run: .\BuildProject.bat
+
+      - name: Build Plugin (Win64)
+        run: .\BuildPlugin.bat
