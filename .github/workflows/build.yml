@@ -21,5 +21,8 @@ jobs:
           submodules: 'recursive'
 #          clean: false
 
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
       - name: Build Project (Win64)
         run: .\BuildGame.bat
