@@ -11,13 +11,13 @@ jobs:
     name: Publish
     runs-on: Gevorg-Win64
     steps:
-      - name: Print Start
-        run: echo "Job Started"
+#      - name: Print Start
+#        run: echo "Job Started"
 
       - name: Checkout Repository
         uses: actions/checkout@v2
         with:
           clean: false
 
-      - name: Build Game (Win64)
+      - name: Build Project (Win64)
         run: .\BuildGame.bat
