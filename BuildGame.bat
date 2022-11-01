@@ -15,6 +15,6 @@ rm -r -force %~dp0..\Builds\
 
 rm -r -force %~dp0..\Archive\
 
-"C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -platform=Win64 -targetplatform=Win64 -build -cook -platform=Win64 -unversionedcookedcontent -map=ThirdPersonMap+ThirdPersonMap -skipcookingeditorcontent -unversionedcookedcontent -pak -compressed -stage -package -stagingdirectory=%~dp0..\Builds -archive -archivedirectory=%~dp0..\Archive
+"C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -platform=Win64 -targetplatform=Win64 -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -unversionedcookedcontent -pak -compressed -stage -package -stagingdirectory=%~dp0..\Builds -archive -archivedirectory=%~dp0..\Archive
 
 popd
