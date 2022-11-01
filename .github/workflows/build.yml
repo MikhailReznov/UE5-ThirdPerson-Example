@@ -24,8 +24,8 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs checkout
 
-#      - name: Clean fdx
-#        run: git clean -fdx
+      - name: Clean fdx
+        run: git clean -fdx
 
       - name: Build Project (Win64)
         run: .\Scripts\BuildProject.bat
