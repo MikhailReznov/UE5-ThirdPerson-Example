@@ -19,16 +19,16 @@ jobs:
         with:
           lfs: 'true'
           submodules: 'recursive'
-#          clean: false
+          clean: false
 
       - name: Checkout LFS objects
         run: git lfs checkout
 
-      - name: Clean fdx
-        run: git clean -fdx
+#      - name: Clean fdx
+#        run: git clean -fdx
 
       - name: Build Project (Win64)
-        run: .\BuildProject.bat
+        run: .\Scripts\BuildProject.bat
 
       - name: Build Plugin (Win64)
-        run: .\BuildPlugin.bat
+        run: .\Scripts\BuildPlugin.bat
