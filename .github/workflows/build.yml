@@ -17,7 +17,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          lfs:true
+          lfs: true
 #          clean: false
 
       - name: Build Project (Win64)
