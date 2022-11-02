@@ -14,7 +14,7 @@ rem -skipbuildeditor
 powershell -Command  "Remove-Item -LiteralPath %ProjectDir%..\Builds\ -Force -Recurse -ErrorAction SilentlyContinue"
 powershell -Command  "Remove-Item -LiteralPath %ProjectDir%..\Archive\ -Force -Recurse -ErrorAction SilentlyContinue"
 
-%EngineDir%Build\BatchFiles\RunUAT.bat BuildCookRun -project=%ProjectDir%UE5ThirdPersonEx.uproject -noP4 -clientconfig=%Configuration% -serverconfig=%Configuration% -unrealexe=%EngineDir%Binaries\Win64\UnrealEditor-Cmd.exe -utf8output -platform=%TargetPlatform% -targetplatform=%TargetPlatform% -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -pak -distribution -compressed -stage -package -rocket -prereqs -nocompileeditor -map=ThirdPersonMap+ThirdPersonMap -stagingdirectory=%ProjectDir%..\Builds -archive -archivedirectory=%ProjectDir%..\Archive
+%EngineDir%Build\BatchFiles\RunUAT.bat BuildCookRun -project=%ProjectDir%UE5ThirdPersonEx.uproject -noP4 -clientconfig=%Configuration% -serverconfig=%Configuration% -unrealexe=%EngineDir%Binaries\Win64\UnrealEditor-Cmd.exe -utf8output -platform=%TargetPlatform% -targetplatform=%TargetPlatform% -build -cook -platform=Win64 -unversionedcookedcontent -skipcookingeditorcontent -pak -distribution -compressed -stage -package -rocket -prereqs -map=ThirdPersonMap+ThirdPersonMap -stagingdirectory=%ProjectDir%..\Builds -archive -archivedirectory=%ProjectDir%..\Archive
 
 powershell -Command "Compress-Archive -Path %ProjectDir%..\Archive\ -DestinationPath %ProjectDir%..\Archive.zip"
 
