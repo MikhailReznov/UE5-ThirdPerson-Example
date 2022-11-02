@@ -11,9 +11,9 @@ rem "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" Buil
 
 rem "C:\Program Files\Epic Games\UE_5.0\Engine\Build\BatchFiles\RunUAT.bat" BuildCookRun -project=%~dp0UE5ThirdPersonEx.uproject -noP4 -clientconfig=Development -serverconfig=Development -unrealexe="C:\Program Files\Epic Games\UE_5.0\Engine\Binaries\Win64\UnrealEditor-Cmd.exe" -utf8output -build -cook -platform=Win64 -unversionedcookedcontent -ddc=InstalledDerivedDataBackendGraph -map= -skipcookingeditorcontent -unversionedcookedcontent -pak -distribution -compressed -stage -package -stagingdirectory=%~dp0..\Builds -cmdline=" -Messaging" -archive -archivedirectory=%~dp0..\Archive
 
-@set EngineDir="C:\Program Files\Epic Games\UE_5.0\Engine\"
+@set EngineDir="C:\Program Files\Epic Games\UE_5.0\Engine\\"
 rem @set ProjectDir=%~dp0..\
-@set ProjectDir="C:\Runners\actions-runner\_work\UE5-ThirdPerson-Example\UE5-ThirdPerson-Example\"
+@set ProjectDir="C:\Runners\actions-runner\_work\UE5-ThirdPerson-Example\UE5-ThirdPerson-Example\\"
 
 @set TargetPlatform=Win64
 @set Configuration=Development
